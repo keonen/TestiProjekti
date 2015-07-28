@@ -1,0 +1,22 @@
+{
+  "name": "testiprojekti",
+  "version": "0.0.1",
+  "description": "Testiprojektin testailua",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keonen/TestiProjekti.git"
+  },
+  "author": "Keijo Kangas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keonen/TestiProjekti/issues"
+  },
+  "homepage": "https://github.com/keonen/TestiProjekti#readme",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
