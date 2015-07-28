@@ -2,3 +2,12 @@ Muutamia esimerkkejä:
 
 Kopioidaan Git-repositoryn sisältö paikalliselle työasemalle:
 git clone https://github.com/keonen/TestiProjekti.git
+
+Asioita, mitä tehtiin ja käytiin päivän aikana:
+
+- Asennettiin Node.js ja Git bash
+- Npm:n avulla voidaan asentaa lisäpaketteja Node.js:ään, esim. Express-moduli
+
+Npm komentoja:
+- npm init
+- 
