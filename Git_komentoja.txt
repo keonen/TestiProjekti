@@ -12,3 +12,41 @@ Npm komentoja:
 - npm init
 
 Esim. komento "npm install express --save" lataa ja asentaa Express-modulin ja päivittää package.json tiedoston sisällön lisäämällä viittauksen asennettuun Express-moduliin.
+
+- Npm init komennolla luotiin package.json -tiedosto, jonka sisältö on tämmöinen:
+
+{
+  "name": "testiprojekti",
+  "version": "0.0.1",
+  "description": "Testiprojektin testailua",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keonen/TestiProjekti.git"
+  },
+  "author": "Keijo Kangas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keonen/TestiProjekti/issues"
+  },
+  "homepage": "https://github.com/keonen/TestiProjekti#readme",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
+
+
+- Lisättiin projektikansion juureen app.js -niminen tiedosto ja päivitettiin tiedoston sisältö seuraavaksi:
+
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+    res.send('Hello World')
+});
+
+app.listen(3000);
+
