@@ -10,4 +10,5 @@ Asioita, mitä tehtiin ja käytiin päivän aikana:
 
 Npm komentoja:
 - npm init
-- 
+
+Esim. komento "npm install express --save" lataa ja asentaa Express-modulin ja päivittää package.json tiedoston sisällön lisäämällä viittauksen asennettuun Express-moduliin.
