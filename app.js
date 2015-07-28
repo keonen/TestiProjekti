@@ -1,16 +1,21 @@
 var express = require('express');
 var app = express();
 
+// This is called for every request
+app.use(function(req, res, next){
+	
+});
+
 app.get('/', function (req, res) {
-    res.send('Hello World, palvelin on nyt käynnissä ja toimii taas.')
+    res.sendfile('index.html')
 });
 
 // app.get('/name', function (req, res) {
     // res.send('Name-hakemiston sisältöä.')
 // });
 
-app.get('/name', function (req, res) {
-    res.send('Testijuttu.')
+app.get('/style.css', function (req, res) {
+    res.sendfile('style.css')
 });
 
 app.listen(3000);
