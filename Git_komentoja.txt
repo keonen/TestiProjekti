@@ -13,6 +13,10 @@ Npm komentoja:
 
 Esim. komento "npm install express --save" lataa ja asentaa Express-modulin ja päivittää package.json tiedoston sisällön lisäämällä viittauksen asennettuun Express-moduliin.
 
+Asennetaan body-parser moduli:
+
+npm install body-parser --save
+
 - Npm init komennolla luotiin package.json -tiedosto, jonka sisältö on tämmöinen:
 
 {

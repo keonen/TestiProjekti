@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 
 // This is called for every request (middleware)
@@ -9,9 +10,13 @@ app.use(function(req, res, next){
 
 app.use('/', express.static('public_html'));
 
-// app.get('/', function (req, res) {
-    // res.sendfile('index.html');
-// });
+//parse application/json
+app.use(bodyParser());
+
+app.post('/contact', function (req, res) {
+	console.log(req.body);
+    res.send('Username is '+req.body.username+ '. <br />Address is '+req.body.address+'. <br />Email is '+req.body.email+'. ');
+});
 
 // app.get('/name', function (req, res) {
     // res.send('Name-hakemiston sisältöä.')
