@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var db = require('./database.js');
 var app = express();
 
 // This is called for every request (middleware)
