@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var db = require('./database.js');
+var db = require('./database');
 var app = express();
 
 // This is called for every request (middleware)
@@ -16,7 +16,9 @@ app.use(bodyParser());
 
 app.post('/contact', function (req, res) {
 	console.log(req.body);
-    res.send('Username is '+req.body.username+ '. <br />Address is '+req.body.address+'. <br />Email is '+req.body.email+'. ');
+	db.addPersonInfo(res, req.body);
+	
+    //res.send('Username is '+req.body.username+ '. <br />Address is '+req.body.address+'. <br />Email is '+req.body.email+'. ');
 });
 
 // app.get('/name', function (req, res) {
