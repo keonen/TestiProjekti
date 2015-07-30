@@ -14,6 +14,10 @@ app.use('/', express.static('public_html'));
 //parse application/json
 app.use(bodyParser());
 
+//configure jade for this server
+app.set('views','./views');
+app.set('view engine','jade');
+
 app.post('/contact', function (req, res) {
 	console.log(req.body);
 	db.addPersonInfo(res, req.body);

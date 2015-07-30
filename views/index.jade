@@ -1,0 +1,7 @@
+extends layout
+block content
+    p="Here are all the contacts"
+    ul
+        each tyyppi in henkilot
+            li= tyyppi.user_name + ',' + tyyppi.email
+       

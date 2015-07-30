@@ -55,7 +55,7 @@ app.get('/', function (req, res) {
 app.listen(3000);
 
 
-- Lisätään tiedostoja repositoryyn seuraavasti:
+- Lisätään tiedostoja esim. Github repositoryyn seuraavasti:
 
 git status
 
@@ -64,5 +64,10 @@ git add .
 git commit -m "Viestin sisältö esim. päivämäärä"
 
 git push
+
+
+Asennetaan template engine:
+
+npm install jade --save
 
 

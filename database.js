@@ -56,7 +56,16 @@ mongoose.connect(uriString, function (err, res){
 			}
 			else
 			{
-				res.send(data);
+				var temp = {
+					
+					otsikko: "Osoitekirja",
+					henkilot: data
+					
+				}
+				
+				res.render('index', temp);
+				//res.render('layout');
+				//res.send(data);
 			}
 			
 		});
