@@ -19,7 +19,7 @@ mongoose.connect(uriString, function (err, res){
 
 });
 	
-	// Tietokantamallin mukaan haetaan dataa
+	// Creating schema and registering it
 	var personInfo = mongoose.Schema({
 		
 		user_name:String,
@@ -44,4 +44,24 @@ mongoose.connect(uriString, function (err, res){
 		res.send("Your information " + data + " was saved to database.");
 		
 	}
+
+	// This function gets all user data from database
+	exports.getPersonInfo = function(res){
+		
+		PersonInfoModel.find(function(err, data){
+			
+			if (err)
+			{
+				res.send("Failed to get data!");
+			}
+			else
+			{
+				res.send(data);
+			}
+			
+		});
+		
+	};
+
+
 	

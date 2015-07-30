@@ -21,9 +21,9 @@ app.post('/contact', function (req, res) {
     //res.send('Username is '+req.body.username+ '. <br />Address is '+req.body.address+'. <br />Email is '+req.body.email+'. ');
 });
 
-// app.get('/name', function (req, res) {
-    // res.send('Name-hakemiston sisältöä.')
-// });
+	app.get('/get_contacts', function (req, res) {
+			db.getPersonInfo(res);
+		});
 
 // app.get('/style.css', function (req, res) {
     // res.sendfile('style.css');
