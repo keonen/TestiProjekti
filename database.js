@@ -41,7 +41,7 @@ mongoose.connect(uriString, function (err, res){
 		temp.email = data.email;
 		
 		temp.save();
-		res.send("Your information " + data + " was saved to database.");
+		res.send('Your information ' + data + ' was saved to database.<br /><a href="/get_contacts">Hae yhteystiedot</a><br /><a href="/">Lisää uusi yhteystieto</a>');
 		
 	}
 

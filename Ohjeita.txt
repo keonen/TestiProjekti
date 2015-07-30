@@ -70,4 +70,13 @@ Asennetaan template engine:
 
 npm install jade --save
 
+Tehdään socket projektia:
+
+- Tehdään uusi kansio, esim: SocketExample
+
+- Avataan Git Bash kyseiseen kansioon
+
+- Luodaan package.json alustamalla npm komennolla: npm init
+
+- Asennetaan socket.io komennolla: npm install socket.io --save
 
