@@ -80,3 +80,4 @@ Tehdään socket projektia:
 
 - Asennetaan socket.io komennolla: npm install socket.io --save
 
+- Asennetaan express-session komennolla: npm install express-session --save

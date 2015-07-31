@@ -3,7 +3,7 @@ block content
     p="Here are all the contacts"
     ul
         each tyyppi in henkilot
-            li= tyyppi.user_name + ',' + tyyppi.email
+            li= tyyppi.user_name + ', ' + tyyppi.address + ', ' + tyyppi.email
     table
         th="Nimi"
         th="Osoite"
@@ -13,3 +13,4 @@ block content
                 td=tyyppi.user_name
                 td=tyyppi.address
                 td=tyyppi.email
+    p(id="test", class="moi") "test"
